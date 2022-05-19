@@ -1,0 +1,32 @@
+{
+  "name": "@lexugo/ember",
+  "version": "0.1.0",
+  "description": "Firebase utilities for react",
+  "main": "index.js",
+  "scripts": {
+    "test": "exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lexugo/ember.git"
+  },
+  "keywords": [
+    "react",
+    "next.js",
+    "firebase",
+    "firestore",
+    "hook"
+  ],
+  "author": "Hugo Laquerre",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lexugo/ember/issues"
+  },
+  "homepage": "https://github.com/lexugo/ember#readme",
+  "dependencies": {
+    "firebase": "^9.6.10",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "@lexugo/neon": "^0.1.0"
+  }
+}
