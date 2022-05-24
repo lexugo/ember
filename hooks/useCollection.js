@@ -1,8 +1,9 @@
 import { getFirestore, collection, query } from 'firebase/firestore'
 
-import { useSnapshot } from './useSnapshot'
+import { useMemo, useState } from 'react'
+import useSnapshot from './useSnapshot'
 
-export function useCollection(path, ...constraints) {
+export default function useCollection(path, ...constraints) {
 	const firestore = getFirestore()
 	const reference = useMemo(() => constraints.length !== 0
 		? query(collection(firestore, path), ...constraints)

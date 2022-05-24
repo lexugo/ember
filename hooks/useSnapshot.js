@@ -1,5 +1,7 @@
 import { onSnapshot } from 'firebase/firestore'
 
-export function useSnapshot(reference, callback, dependencies) {
+import { useEffect } from 'react'
+
+export default function useSnapshot(reference, callback, dependencies) {
 	useEffect(() =>  onSnapshot(reference, callback), dependencies)
 }
